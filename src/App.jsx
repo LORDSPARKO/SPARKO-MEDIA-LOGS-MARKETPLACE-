@@ -1,28 +1,24 @@
-import { useState, useEffect } from 'react'
-import { supabase } from './supabaseClient'
-
 function App() {
-  const [products, setProducts] = useState([])
-  
-  useEffect(() => {
-    getProducts()
-  }, [])
-
-  async function getProducts() {
-    const { data } = await supabase.from('products').select()
-    setProducts(data || [])
-  }
-
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial' }}>
-      <h1>SPARKO MEDIA LOGS MARKETPLACE</h1>
-      <p>Your marketplace is live! 🔥</p>
-      <p>Products: {products.length}</p>
-      <p style={{marginTop: '20px', color: 'gray'}}>
-        Next: Connect Supabase to show real products
+    <div style={{ 
+      padding: '40px', 
+      fontFamily: 'Arial', 
+      textAlign: 'center',
+      backgroundColor: '#0a0a0a',
+      color: '#ffffff',
+      minHeight: '100vh'
+    }}>
+      <h1 style={{ fontSize: '2.5rem', color: '#00ff88' }}>
+        SPARKO MEDIA LOGS MARKETPLACE 🔥
+      </h1>
+      <p style={{ fontSize: '1.2rem', margin: '20px 0' }}>
+        The #1 Plug for Authentic Social Media Accounts
       </p>
-    </div>
-  )
-}
-
-export default App
+      <div style={{ 
+        margin: '30px auto', 
+        padding: '25px', 
+        border: '2px solid #00ff88',
+        borderRadius: '12px',
+        maxWidth: '500px'
+      }}>
+        <h2>
