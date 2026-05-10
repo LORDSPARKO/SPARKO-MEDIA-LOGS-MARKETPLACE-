@@ -21,4 +21,15 @@ function App() {
         borderRadius: '12px',
         maxWidth: '500px'
       }}>
-        <h2>
+        <h2>🚀 WE ARE LIVE! 🚀</h2>
+        <p>✅ Instagram • TikTok • Twitter • YouTube</p>
+        <p>✅ Aged, Verified, Monetizable Accounts</p>
+        <p style={{ marginTop: '20px', color: '#00ff88', fontWeight: 'bold' }}>
+          Successfully Deployed on Vercel
+        </p>
+      </div>
+    </div>
+  )
+}
+
+export default App
